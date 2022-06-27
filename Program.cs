@@ -4,6 +4,30 @@
     {
         static void Main(string[] args)
         {
+
+            // inizio quarto esercizio snack10
+
+            Console.Write("Scegli il numero di array: ");
+            int N = Int32.Parse(Console.ReadLine());
+
+            Random rnd = new Random();
+            int num = rnd.Next();
+
+            for (int i = 0; i < N; i++)
+            {
+                int[] arrayNumeri = new int[10];
+
+                for (int j = 0; j < 10; j++)
+                {
+                    arrayNumeri[j] = rnd.Next(1, 101);
+                    Console.Write(arrayNumeri[j] + ",");
+                }
+                Console.WriteLine();
+            }
+            // fine quarto esercizio snack10
+
+            return;
+
             // inizio terzo esercizio snack5
 
             Console.WriteLine("Inserisci un numero");
