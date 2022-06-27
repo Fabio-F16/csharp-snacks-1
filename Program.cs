@@ -11,15 +11,16 @@
             int N = Int32.Parse(Console.ReadLine());
 
             Random rnd = new Random();
-            int num = rnd.Next();
+           
 
             for (int i = 0; i < N; i++)
             {
                 int[] arrayNumeri = new int[10];
 
-                for (int j = 0; j < 10; j++)
+                for (int j = 0; j < arrayNumeri.Length; j++)
                 {
                     arrayNumeri[j] = rnd.Next(1, 101);
+
                     Console.Write(arrayNumeri[j] + ",");
                 }
                 Console.WriteLine();
