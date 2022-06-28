@@ -4,6 +4,27 @@
     {
         static void Main(string[] args)
         {
+            //inizio snack 12
+            Console.WriteLine("inserisci un numero");
+            int numero = Int32.Parse(Console.ReadLine());
+
+            ePari(numero);
+
+            void ePari(int numeroUtente)
+            {
+                if (numeroUtente % 2 == 0)
+                {
+                    Console.WriteLine("il numero " + numeroUtente + " è pari");
+                }
+                else
+                {
+                    Console.WriteLine("il numero " + numeroUtente + " è dispari");
+                }
+            }
+
+            // fine snack 12
+
+            return;
             // inizio snack 11
             string wordPrima;
             string wordSeconda;
