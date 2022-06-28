@@ -4,6 +4,59 @@
     {
         static void Main(string[] args)
         {
+            // inizio snack 11
+            string wordPrima;
+            string wordSeconda;
+
+            wordPrima = RichiediParola("Inserisci la prima parola:");
+            wordSeconda = RichiediParola("Inserisci la seconda parola:");
+
+            if(sonoLungheUguali(wordPrima, wordSeconda))
+            {
+                Console.WriteLine(wordPrima);
+                Console.WriteLine(wordSeconda);
+            }
+            else
+            {
+                stampaPiuLunga(wordSeconda, wordPrima);
+            }
+
+
+            // funzioni
+            bool sonoLungheUguali(string stringa1, string stringa2)
+            {
+                if(stringa1.Length == stringa2.Length)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }
+
+            void stampaPiuLunga(string stringa1, string stringa2)
+            {
+                if (stringa1.Length > stringa2.Length)
+                {
+                    Console.WriteLine(stringa1);
+                }
+                if(stringa2.Length > stringa1.Length)
+                {
+                    Console.WriteLine(stringa2);
+                }
+            }
+
+            string RichiediParola(string messaggio)
+            {
+                Console.Write(messaggio);
+                string input = Console.ReadLine();
+                return input;
+            }
+
+            // fine snack 11
+
+            return;
 
             // inizio quarto esercizio snack10
 
